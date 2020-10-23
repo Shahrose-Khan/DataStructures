@@ -303,14 +303,14 @@ void Expression::infixToPostfix()
 			{
 				postfixStr += ch;
 			}
-			// If the scanned character is an ‘(‘, push it to the stack. 
+			// If the scanned character is an â€˜(â€˜, push it to the stack. 
 			else if (ch == '(')
 			{
 				stack.push(ch);
 			}
 
-			// If the scanned character is an ‘)’, pop and to output string from the stack 
-			// until an ‘(‘ is encountered. 
+			// If the scanned character is an â€˜)â€™, pop and to output string from the stack 
+			// until an â€˜(â€˜ is encountered. 
 			else if (ch == ')')
 			{
 				while (stack.top() != '(' && !stack.isEmpty())
